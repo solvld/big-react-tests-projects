@@ -5,7 +5,7 @@ import GroceryApp from './Projects/Grocery/GroceryApp';
 function App() {
   return (
     <div className="App">
-      <ForumApp />
+      {/* <ForumApp /> */}
       <hr/>
       <GroceryApp />
     </div>
