@@ -1,0 +1,13 @@
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+.SearchBar{
+  width: fit-content;
+  /* border: solid; */
+}
+
+button{
+  width: min-content;
+}
