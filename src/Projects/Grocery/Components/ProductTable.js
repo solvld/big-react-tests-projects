@@ -5,9 +5,21 @@ import ProductRow from "./ProductRow";
 function ProductTable(props) {
   const rows = [];
   let lastCategory = null;
-  let products = props.infoObject
+  let products = props.infoObject;
+  let filter = props.filterText;
+
 
   products.forEach((object) => {
+    if (
+      object.name.toLowerCase().indexOf(filter.toLowerCase()) === -1
+    ) {
+      return;
+    }
+    if (
+      props.inStockOnly && !object.stocked
+    ) {
+      return;
+    }
     if (object.category !== lastCategory) {
       rows.push(
         <ProductCategoryRow
