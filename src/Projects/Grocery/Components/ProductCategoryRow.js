@@ -1,10 +1,10 @@
 import React from "react";
 
-function ProductCategoryRow({category}) {
+function ProductCategoryRow(props) {
   return (
     <tr>
       <th colSpan='2'>
-        {category}
+        {props.category}
       </th>
     </tr>
   )

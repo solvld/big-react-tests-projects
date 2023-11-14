@@ -2,24 +2,25 @@ import React from "react";
 import ProductCategoryRow from "./ProductCategoryRow";
 import ProductRow from "./ProductRow";
 
-function ProductTable({products}) {
+function ProductTable(props) {
   const rows = [];
-  const lastCategory = null;
+  let lastCategory = null;
+  let products = props.infoObject
 
-  products.forEach((product) => {
-    if (product.category !== lastCategory) {
+  products.forEach((object) => {
+    if (object.category !== lastCategory) {
       rows.push(
         <ProductCategoryRow
-          category={product.category}
-          key={product.category} />
+          category={object.category}
+          key={object.category} />
       );
     }
     rows.push(
       <ProductRow
-        product={product}
-        key={product.name} />
+        product={object}
+        key={object.name} />
     );
-    lastCategory = product.category;
+    lastCategory = object.category;
   });
 
   return (
@@ -36,3 +37,5 @@ function ProductTable({products}) {
     </table>
   )
 }
+
+export default ProductTable;

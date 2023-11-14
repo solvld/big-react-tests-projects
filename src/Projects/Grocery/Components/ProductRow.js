@@ -1,15 +1,15 @@
 import React from "react";
 
-function ProductRow({product}) {
-  const name = product.stosked? product.name : 
+function ProductRow(props) {
+  const name = props.product.stocked? props.product.name : 
     <span style={{color: 'red'}}>
-      {product.name}
-    </span>
+      {props.product.name}
+    </span>;
 
   return (
     <tr>
       <td>{name}</td>
-      <td>{product.price}</td>
+      <td>{props.product.price}</td>
     </tr>
   )
 }
