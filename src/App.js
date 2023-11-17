@@ -2,6 +2,7 @@ import './App.css';
 import ForumApp from './Projects/Forum/ForumApp';
 import GroceryApp from './Projects/Grocery/GroceryApp';
 import ExampleFetch from './Projects/ExampleFetch/ExampleFetch'
+import Showcase from './Projects/RandomFontAwesomButton/RandomButton';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <hr/>
       <GroceryApp />
       <hr/> 
-      <ExampleFetch />
+      {/* <ExampleFetch /> */}
+      <Showcase />
     </div>
   );
 }
