@@ -13,6 +13,7 @@ function App() {
       <hr/> 
       {/* <ExampleFetch /> */}
       <Showcase />
+      
     </div>
   );
 }
