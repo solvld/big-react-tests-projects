@@ -4,11 +4,13 @@ import GroceryApp from './Projects/Grocery/GroceryApp';
 import Showcase from './Projects/RandomFontAwesomButton/RandomButton';
 import PassingThoughtsApp from './Projects/PassingThoughts/PassingThoughtsApp';
 import Header from './Projects/themeToggler/Header';
+import ContextMixtapeApp from './Projects/ContextMixtape/ContextMixtapeApp';
 
 function App() {
   return (
-    <div className="App">
+    <div style={{margin: "auto", width: 700}}>
       <Header />
+      <ContextMixtapeApp />
       {/* <ForumApp /> */}
       <PassingThoughtsApp />
       <hr />
