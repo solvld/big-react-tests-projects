@@ -8,7 +8,7 @@ import ContextMixtapeApp from './Projects/ContextMixtape/ContextMixtapeApp';
 
 function App() {
   return (
-    <div style={{margin: "auto", width: 700}}>
+    <div style={{ margin: 'auto', width: 700 }}>
       <Header />
       <ContextMixtapeApp />
       {/* <ForumApp /> */}
