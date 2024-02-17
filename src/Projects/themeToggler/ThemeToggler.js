@@ -2,7 +2,7 @@ import React from 'react';
 import { useTheme } from '../../hooks/useTheme';
 import styles from './styles.module.css'
 
-const Header = () => {
+const ThemeToggler = () => {
   const [onToggleTheme, isDarkTheme] = useTheme();
 
   return (
@@ -17,4 +17,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default ThemeToggler;

@@ -14,3 +14,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.header a {
+  font-size: 18px;
+}
+
+.header a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 34px;
+  align-items: center;
+}
+
+main {
+  margin: 0 auto;
+}

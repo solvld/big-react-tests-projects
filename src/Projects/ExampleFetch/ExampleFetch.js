@@ -41,7 +41,7 @@ export default function Forecast() {
           </tr>
         </thead>
         <tbody>
-          {data.map((item, i) => (
+          {data.map((item) => (
             <tr key={item.id}>
               <td>{item.summary}</td>
               <td> {item.temp.avg}°F</td>
