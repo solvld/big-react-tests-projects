@@ -7,6 +7,6 @@ function Head(props) {
       <h1>{props.username}</h1>
     </div>
   );
-};
+}
 
 export default Head;

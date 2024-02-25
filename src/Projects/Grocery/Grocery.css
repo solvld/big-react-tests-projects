@@ -1,13 +1,13 @@
-form{
+form {
   display: flex;
   flex-direction: column;
 }
 
-.SearchBar{
+.SearchBar {
   width: fit-content;
   /* border: solid; */
 }
 
-button{
+button {
   width: min-content;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTheme } from '../../hooks/useTheme';
-import styles from './styles.module.css'
+import styles from './styles.module.css';
 
 const ThemeToggler = () => {
   const [onToggleTheme, isDarkTheme] = useTheme();

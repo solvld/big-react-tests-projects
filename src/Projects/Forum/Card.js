@@ -1,15 +1,17 @@
-import React from "react";
+import React from 'react';
 import Head from './Head';
-import Body from './Body'
+import Body from './Body';
 
-function Card(props){
+function Card(props) {
   return (
     <div className="Card">
-      <Head profileImg={props.commentObject.profileImg} 
-        username={props.commentObject.username} />
+      <Head
+        profileImg={props.commentObject.profileImg}
+        username={props.commentObject.username}
+      />
       <Body comment={props.commentObject.comment}></Body>
     </div>
-  )
-};
+  );
+}
 
 export default Card;

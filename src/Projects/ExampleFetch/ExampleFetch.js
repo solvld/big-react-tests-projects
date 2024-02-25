@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import { get } from './mockBackend/fetch';
 
 export default function Forecast() {
@@ -8,24 +8,26 @@ export default function Forecast() {
 
   useEffect(() => {
     alert('Requested data from server...');
-    get(forecastType).then((response) => {
-      alert('Response: ' + JSON.stringify(response,'',2));
+    get(forecastType).then(response => {
+      alert('Response: ' + JSON.stringify(response, '', 2));
       setData(response.data);
     });
   }, [forecastType]);
 
-  const handleChange = (index) => ({ target }) =>
-    setNotes((prev) => ({
-      ...prev,
-      [index]: target.value
-    }));
+  const handleChange =
+    index =>
+    ({ target }) =>
+      setNotes(prev => ({
+        ...prev,
+        [index]: target.value,
+      }));
 
-  if (!data){
-    return <p>Loading...</p>
-  };
+  if (!data) {
+    return <p>Loading...</p>;
+  }
 
   return (
-    <div className='App'>
+    <div className="App">
       <h1>My Weather Planner</h1>
       <div>
         <button onClick={() => setForecastType('/daily')}>5-day</button>
@@ -41,7 +43,7 @@ export default function Forecast() {
           </tr>
         </thead>
         <tbody>
-          {data.map((item) => (
+          {data.map(item => (
             <tr key={item.id}>
               <td>{item.summary}</td>
               <td> {item.temp.avg}°F</td>
