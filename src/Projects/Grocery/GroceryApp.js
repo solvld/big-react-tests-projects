@@ -19,7 +19,7 @@ export default function GroceryApp() {
   };
 
   return (
-    <div>
+    <main>
       <h1>Grocery List</h1>
       <SearchBar
         filterText={filterText}
@@ -32,6 +32,6 @@ export default function GroceryApp() {
         filterText={filterText}
         inStockOnly={inStockOnly}
       />
-    </div>
+    </main>
   );
 }

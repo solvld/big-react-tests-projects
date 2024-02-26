@@ -6,6 +6,7 @@
   --bg-color: #fff;
   --bg-color-inverted: #161625;
   --heading-color: #292922;
+  --surface-color: #f4f4f0;
 }
 
 [data-theme="dark"] {
@@ -13,7 +14,8 @@
   --secondary-color: #818cab;
   --font-color: #e1e1ff;
   --font-color-inverted: #424242;
-  --bg-color: #161625;
-  --bg-color-inverted: #fff;
+  --bg-color: #1c1c39fb;
+  --bg-color-inverted: #ffffffe6;
   --heading-color: #818cab;
+  --surface-color: #536390;
 }

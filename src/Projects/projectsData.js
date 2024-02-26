@@ -3,11 +3,18 @@ import PassingThoughtsApp from './PassingThoughts/PassingThoughtsApp';
 import GroceryApp from './Grocery/GroceryApp';
 import Forecast from './ExampleFetch/ExampleFetch';
 import ThemeToggler from './themeToggler/ThemeToggler';
+import ShopStoreApp from './ShopStore';
 
 export const projectsData = [
   {
-    name: 'Context Mixtape',
+    name: 'Shop store',
     link: '/',
+    component: <ShopStoreApp />,
+    description: 'project with Redux',
+  },
+  {
+    name: 'Context Mixtape',
+    link: '/mixtape',
     component: <ContextMixtapeApp />,
     description: 'This is project 1.',
   },

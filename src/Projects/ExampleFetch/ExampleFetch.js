@@ -7,9 +7,7 @@ export default function Forecast() {
   const [forecastType, setForecastType] = useState('/daily');
 
   useEffect(() => {
-    alert('Requested data from server...');
     get(forecastType).then(response => {
-      alert('Response: ' + JSON.stringify(response, '', 2));
       setData(response.data);
     });
   }, [forecastType]);

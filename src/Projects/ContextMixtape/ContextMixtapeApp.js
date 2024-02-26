@@ -40,11 +40,11 @@ const songs = [
 function ContextMixtapeApp() {
   return (
     <MixtapeProvider songs={songs}>
-      <div className={styles.app}>
+      <main className={styles.app}>
         <h1 className={styles.heading}>My 🔥 Mixtape</h1>
         <Controls />
         <SongList />
-      </div>
+      </main>
     </MixtapeProvider>
   );
 }

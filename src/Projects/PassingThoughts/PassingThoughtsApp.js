@@ -25,11 +25,11 @@ export default function PassingThoughtsApp() {
     setThoughts(thoughts => thoughts.filter(item => item.id !== idToRemove));
 
   return (
-    <div className="psApp">
+    <main className="psApp">
       <header>
         <h1>Passing Thoughts</h1>
       </header>
-      <main>
+      <div>
         <AddThoughtForm addThought={addThought} />
         <ul className="thoughts">
           {thoughts.map(thought => (
@@ -40,7 +40,7 @@ export default function PassingThoughtsApp() {
             />
           ))}
         </ul>
-      </main>
-    </div>
+      </div>
+    </main>
   );
 }
