@@ -3,8 +3,7 @@ import PassingThoughtsApp from './PassingThoughts/PassingThoughtsApp';
 import GroceryApp from './Grocery/GroceryApp';
 import Forecast from './ExampleFetch/ExampleFetch';
 import ThemeToggler from './themeToggler/ThemeToggler';
-import ShopStoreApp from './ShopStore';
-
+import ShopStoreApp from './ShopStore/app/index';
 export const projectsData = [
   {
     name: 'Shop store',
