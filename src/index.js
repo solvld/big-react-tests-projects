@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './app/App';
 import { Provider } from 'react-redux';
-import { store } from './Projects/ShopStore/app/store';
+import store from './Projects/ShopStore/app/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const render = () => {
@@ -17,5 +17,3 @@ const render = () => {
 };
 
 render();
-
-store.subscribe(render);

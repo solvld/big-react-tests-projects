@@ -1,20 +1,13 @@
-import { inventoryData } from '../../data';
+import { createSlice } from '@reduxjs/toolkit';
 
-export const loadData = () => {
-  return {
-    type: 'inventory/loadData',
-    payload: inventoryData,
-  };
-};
+const inventorySlice = createSlice({
+  name: 'inventory',
+  initialState: [],
+  reducers: {
+    loadData: (state, action) => action.payload,
+  },
+});
 
-const initialInventory = [];
-export const inventoryReducer = (inventory = initialInventory, action) => {
-  switch (action.type) {
-    case 'inventory/loadData': {
-      return action.payload;
-    }
-    default: {
-      return inventory;
-    }
-  }
-};
+export const { loadData } = inventorySlice.actions;
+
+export default inventorySlice.reducer;

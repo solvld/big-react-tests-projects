@@ -1,15 +1,20 @@
 import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 
 import {
   calculatePrice,
   getCurrencySymbol,
 } from '../../utilities/utilities.js';
+import { inventoryData } from '../../data';
 import { addItem } from '../cart/cartSlice.js';
 import { loadData } from './inventorySlice';
 
-export const Inventory = ({ inventory, currencyFilter, dispatch }) => {
+export const Inventory = () => {
+  const dispatch = useDispatch();
+  const inventory = useSelector(state => state.inventory);
+  const currencyFilter = useSelector(state => state.currencyFilter);
   const onMount = () => {
-    dispatch(loadData());
+    dispatch(loadData(inventoryData));
   };
   useEffect(onMount, [dispatch]);
 

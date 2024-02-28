@@ -4,11 +4,15 @@ import {
   getCurrencySymbol,
 } from '../../utilities/utilities.js';
 
+import { useDispatch, useSelector } from 'react-redux';
+
 // Import the changeItemQuantity() action creator.
 import { changeItemQuantity } from './cartSlice.js';
 
-export const Cart = props => {
-  const { cart, currencyFilter, dispatch } = props;
+export const Cart = () => {
+  const dispatch = useDispatch();
+  const cart = useSelector(state => state.cart);
+  const currencyFilter = useSelector(state => state.currencyFilter);
 
   const onInputChangeHandler = (name, input) => {
     // If the user enters a bad value...
