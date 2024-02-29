@@ -24,7 +24,7 @@ export const Cart = () => {
     const newQuantity = Number(input);
 
     // Dispatch an action to change the quantity of the given name and quantity.
-    dispatch(changeItemQuantity(name, newQuantity));
+    dispatch(changeItemQuantity({ name, newQuantity }));
   };
 
   // Use the cart and currencyFilter slices to render their data.
