@@ -4,10 +4,18 @@ import GroceryApp from './Grocery/GroceryApp';
 import Forecast from './ExampleFetch/ExampleFetch';
 import ThemeToggler from './themeToggler/ThemeToggler';
 import ShopStoreApp from './ShopStore/app/index';
+import NewsApp from './NewsReader/app/app.js';
+
 export const projectsData = [
   {
-    name: 'Shop store',
+    name: 'News-reader',
     link: '/',
+    component: <NewsApp />,
+    description: 'project with Redux',
+  },
+  {
+    name: 'Shop store',
+    link: '/shop-store',
     component: <ShopStoreApp />,
     description: 'project with Redux',
   },
